@@ -1,0 +1,8 @@
+# Allows import-sort-cli to be used as a pre-commit-hook with pre-commit
+# https://pre-commit.com/#pre-commit-configyaml---hooks
+- id: import-sort-cli
+  name: Sort JS imports
+  description: Sort javascript and typescript imports
+  entry: npx import-sort
+  language: node
+  types: [javascript]
